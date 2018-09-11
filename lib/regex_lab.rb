@@ -15,6 +15,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  #phone.(/^[A-Fa-f0-9]{10}$/) one trial that I was working with
+  #phone.(/^[A-Fa-f0-9]{10}$/) one trial that I was working with, yielded true statements, but not false statements
   phone.match(/^.?\d{3}.?\d{3}.?\d{4}$/) ? true : false
 end
